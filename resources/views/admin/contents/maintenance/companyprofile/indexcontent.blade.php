@@ -32,24 +32,30 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Company Logo</label>
                                 <div class="col-sm-10">
-                                   @if($page_data['companylogo']->content_desc)
-                                   <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;width: 100px;" src="{{asset('includes/admin/images/'.$page_data['companylogo']->content_desc)}}">
+                                 <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                  <div class="fileinput-new thumbnail">
+                                      @if($page_data['companylogo']->content_desc)
+                                   <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" src="{{asset('includes/admin/images/'.$page_data['companylogo']->content_desc)}}">
                                    @else
-                                   <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;width: 100px;" src="{{asset('includes/admin/images/noimg.jpg')}}">
+                                   <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" src="{{asset('includes/admin/images/noimg.jpg')}}">
 
                                    @endif
+                                  </div>
+                                  <div class="fileinput-preview fileinput-exists thumbnail" style=""></div>
+                                  <div>
+                                    <span class="btn btn-rose btn-round btn-file">
+                                      <span class="fileinput-new">Select image</span>
+                                      <span class="fileinput-exists">Change</span>
+                                      <input type="hidden"><input type="file" name="companylogo">
+                                    </span>
+                                    
+                                  </div>
+                                </div>
+                                 
 
                                </div>
                            </div>
                        </fieldset>
-                       <fieldset>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label"></label>
-                            <div class="col-sm-10">
-                              <input type="file" name="companylogo">
-                          </div>
-                      </div>
-                  </fieldset>
                      <fieldset align="center">
                                             <button class="btn btn-wd btn-info btn-fill btn-rotate">
                                                 <span class="btn-label">

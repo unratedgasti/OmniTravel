@@ -5,7 +5,6 @@
             <div class="modal-content">
               <!--Header-->
               <div class="modal-header">
-                <img src="{{asset('includes/admin/images/noimg.jpg')}}" class=" img-responsive" >
               </div>
 
               <!--Body-->
@@ -13,11 +12,25 @@
                {!! Form::open(['url' => '/admin/maintenanceslider/','id'=>'validatelogin','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
 
                <fieldset>
+
+                    <input type="hidden" name="action" value="add">
                 <div class="form-group">
                   <label class="col-sm-3 control-label">Slider Image</label>
                   <div class="col-sm-9">
-                    <input type="hidden" name="action" value="add">
-                    <input type="file" name="slider_img">
+                   <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                    <div class="fileinput-new thumbnail">
+                      <img src="{{asset('includes/admin/images/noimg.jpg')}}" alt="...">
+                    </div>
+                    <div class="fileinput-preview fileinput-exists thumbnail" style=""></div>
+                    <div>
+                      <span class="btn btn-rose btn-round btn-file">
+                        <span class="fileinput-new">Select image</span>
+                        <span class="fileinput-exists">Change</span>
+                        <input type="hidden"><input type="file" name="slider_img">
+                      </span>
+                      
+                    </div>
+                  </div>
                   </div>
                 </div>
               </fieldset>

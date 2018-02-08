@@ -50,24 +50,31 @@
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">Product Image</label>
                                                 <div class="col-sm-10">
-                                                 @if($page_data['product']->prod_image)
-                                                  <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;width: 100px;" src="{{asset('includes/admin/products/'.$page_data['product']->prod_image)}}">
+                                                  <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                    <div class="fileinput-new thumbnail">
+                                                     @if($page_data['product']->prod_image)
+                                                  <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" src="{{asset('includes/admin/products/'.$page_data['product']->prod_image)}}">
                                                  @else
-                                                  <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;width: 100px;" src="{{asset('includes/admin/products/noimg.jpg')}}">
+                                                  <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" src="{{asset('includes/admin/products/noimg.jpg')}}">
                                                
                                                  @endif
+                                                    </div>
+                                                    <div class="fileinput-preview fileinput-exists thumbnail" style=""></div>
+                                                    <div>
+                                                      <span class="btn btn-rose btn-round btn-file">
+                                                        <span class="fileinput-new">Select image</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="hidden"><input type="file" name="prod_images">
+                                                      </span>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                
                                                   
                                                 </div>
                                             </div>
                                         </fieldset>
-                                          <fieldset>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label"></label>
-                                                <div class="col-sm-10">
-                                                  <input type="file" name="prod_images">
-                                                </div>
-                                            </div>
-                                        </fieldset>
+                                    
                                           <fieldset>
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">Product Status</label>

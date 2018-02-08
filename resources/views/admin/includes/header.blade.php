@@ -5,6 +5,7 @@
   <link href="{{url('includes/admin/paper-pro/assets/css/font-awesome.min.css')}}" rel="stylesheet" />
     <!--  Paper Dashboard core CSS    -->
     <link href="{{url('includes/admin/paper-pro/assets/css/paper-dashboard.css?v=1.2.1')}}" rel="stylesheet"/>
+    <link href="{{url('includes/admin/paper-pro/assets/css/daniel.css')}}" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="{{url('includes/admin/paper-pro/assets/css/demo.css')}}" rel="stylesheet" />
@@ -36,6 +37,7 @@
     <script src="{{url('includes/admin/paper-pro/assets/js/perfect-scrollbar.min.js')}}" type="text/javascript"></script>
     <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
     <script src="{{url('includes/admin/paper-pro/tinymce/js/tinymce/tinymce.min.js')}}" type="text/javascript"></script>
+      <script src="{{url('includes/admin/paper-pro/assets/js/jasny-bootstrap.min.js')}}" type="text/javascript"></script>
 
 
    <script>
