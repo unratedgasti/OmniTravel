@@ -94,7 +94,7 @@ $().ready(function(){
 
 });
 
-demo = {
+drmt = {
 
     initCirclePercentage: function(){
 

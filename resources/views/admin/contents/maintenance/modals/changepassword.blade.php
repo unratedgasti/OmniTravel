@@ -10,7 +10,7 @@
     
                 </div>
               <div class="modal-body">
-               {!! Form::open(['url' => '/admin/changepassword/','id'=>'validatelogin','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
+               {!! Form::open(['url' => '/admin/changepassword/','id'=>'changepass','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
                
                <fieldset>
                <div class="form-group  {{$errors->first('cpass') ? 'has-error' : '' }}">

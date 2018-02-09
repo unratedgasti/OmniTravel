@@ -19,7 +19,7 @@
         <div class="sidebar-wrapper">
             <div class="user">
                 <div class="photo">
-                    <img src="{{asset('includes/admin/paper-pro/assets/img/faces/face-1.jpg')}}" />
+                    <img src="{{asset('includes/admin/backend/assets/img/faces/face-1.jpg')}}" />
                 </div>
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
@@ -30,7 +30,7 @@
                     </a>
                     <div class="clearfix"></div>
 
-                   <div class="collapse" id="collapseExample">
+                   <div class="collapse @if($page_data['active'] == 'profile') in @endif" id="collapseExample">
                             <ul class="nav">
                                   <li class="@if($page_data['active'] == 'profile') active @endif">
                                   <a href="{{url('admin/profile')}}">
@@ -75,7 +75,7 @@
                                <b class="caret"></b>
                             </p>
                         </a>
-                        <div class="collapse" id="maintenance">
+                        <div class="collapse @if($page_data['active'] == 'contact' || $page_data['active'] == 'about'|| $page_data['active'] == 'company') in @endif" id="maintenance">
                             <ul class="nav">
                                  <li class="@if($page_data['active'] == 'company') active @endif">
                                      <a href="{{url('/admin/company')}}">

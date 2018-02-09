@@ -10,7 +10,7 @@
 
               <!--Body-->
               <div class="modal-body">
-               {!! Form::open(['url' => '/admin/maintenanceslider/','id'=>'validatelogin','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
+               {!! Form::open(['url' => '/admin/maintenanceslider/','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
               <input type="hidden"  name="id" value="{{$value->id}}">
                <input type="hidden" name="action" value="update">
                <fieldset>

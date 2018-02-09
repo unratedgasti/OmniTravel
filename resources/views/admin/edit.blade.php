@@ -44,78 +44,48 @@
     
   
 
-    <!--  Forms Validations Plugin -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.validate.min.js')}}"></script>
-
-    <!-- Promise Library for SweetAlert2 working on IE -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/es6-promise-auto.min.js')}}"></script>
-
-    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-    <script src="{{url('includes/admin/paper-pro/assets/js/moment.min.js')}}"></script>
-
-    <!--  Date Time Picker Plugin is included in this js file -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-datetimepicker.js')}}"></script>
-
-    <!--  Select Picker Plugin -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-selectpicker.js')}}"></script>
-
-    <!--  Switch and Tags Input Plugins -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-switch-tags.js')}}"></script>
-
-    <!-- Circle Percentage-chart -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.easypiechart.min.js')}}"></script>
-
-    <!--  Charts Plugin -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/chartist.min.js')}}"></script>
-
-    <!--  Notifications Plugin    -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-notify.js')}}"></script>
-
-    <!-- Sweet Alert 2 plugin -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/sweetalert2.js')}}"></script>
-
-    <!-- Vector Map plugin -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery-jvectormap.js')}}"></script>
-
-    <!--  Google Maps Plugin    -->
-    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFPQibxeDaLIUHsC6_KqDdFaUdhrbhZ3M"></script> --}}
-
-    <!-- Wizard Plugin    -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.bootstrap.wizard.min.js')}}"></script>
-
-    <!--  Bootstrap Table Plugin    -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-table.js')}}"></script>
-
-    <!--  Plugin for DataTables.net  -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.datatables.js')}}"></script>
-
-    <!--  Full Calendar Plugin    -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/fullcalendar.min.js')}}"></script>
-
-    <!-- Paper Dashboard PRO Core javascript and methods for Demo purpose -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/paper-dashboard.js?v=1.2.1')}}"></script>
-    
-    <!--   Sharrre Library    -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.sharrre.js')}}"></script>
-
-    <!-- Paper Dashboard PRO DEMO methods, don't include it in your project! -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/demo.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/jquery.validate.min.js')}}"></script>
 
 
-    <!--  Datepicker JS     -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/datepicker.min.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/es6-promise-auto.min.js')}}"></script>
 
-    <!--  Select2 JS     -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/select2.min.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/moment.min.js')}}"></script>
 
-    <!--  Datetimepicker JS     -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/bootstrap-datetimepicker.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/bootstrap-datetimepicker.js')}}"></script>
 
-    <!--  Datatables JS     -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.datatables.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/bootstrap-selectpicker.js')}}"></script>
 
-    <!--  maskMoney JS     -->
-    <script src="{{url('includes/admin/paper-pro/assets/js/jquery.maskMoney.js')}}"></script>
+<script src="{{url('includes/admin/backend/assets/js/bootstrap-switch-tags.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.easypiechart.min.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/bootstrap-notify.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/sweetalert2.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery-jvectormap.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.bootstrap.wizard.min.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/bootstrap-table.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.datatables.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/fullcalendar.min.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/paper-dashboard.js?v=1.2.1')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.sharrre.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/drmt.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/datepicker.min.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/select2.min.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.datatables.js')}}"></script>
+
+<script src="{{url('includes/admin/backend/assets/js/jquery.maskMoney.js')}}"></script>
     
 
     <script type="text/javascript">

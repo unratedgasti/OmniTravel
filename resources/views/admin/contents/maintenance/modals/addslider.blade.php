@@ -9,7 +9,7 @@
 
               <!--Body-->
               <div class="modal-body">
-               {!! Form::open(['url' => '/admin/maintenanceslider/','id'=>'validatelogin','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
+               {!! Form::open(['url' => '/admin/maintenanceslider/','id'=>'addproduct','novalidate'=>"novalidate",'class'=>'form-horizontal','files'=>'true']) !!}
 
                <fieldset>
 

@@ -16,9 +16,9 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 </style>
 <div class="wrapper wrapper-full-page">
-    <div class="full-page login-page" data-color="" data-image="{{asset('includes/admin/paper-pro/assets/img/Dribbble.png')}}">
+    <div class="full-page login-page" data-color="" data-image="{{asset('includes/admin/backend/assets/img/Dribbble.png')}}">
         <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
-
+{{asset('includes/admin/backend/assets/img/Dribbble.png')}}
         <div class="content">
             <div class="container">
                 <div class="row">
