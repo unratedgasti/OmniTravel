@@ -21,7 +21,7 @@
 
                               <div class="card-content table-responsive table-full-width">
                                     <table class="table table-striped table-hover">
-                                        <thead>
+                                        <thead  class=" text-primary">
                                             <tr>
                                                 <th> Name</th>
                                                 <th> Description</th>

@@ -24,8 +24,7 @@ class DashboardController extends Controller
     public function index()
     {
         //
-     $data =   ProductModel::paginate(10);
-      $page_data = array('page_name'=> "Dashboard",'active'=>'dashboard','products'=>$data);
+      $page_data = array('page_name'=> "Dashboard",'active'=>'dashboard');
         return view('admin/contents/dashboard/indexcontent',array('page_data'=>$page_data));
     }
 

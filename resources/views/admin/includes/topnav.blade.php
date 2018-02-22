@@ -1,5 +1,5 @@
     
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-linear" style="background-color: red">
         <div class="container-fluid">
             <div class="navbar-minimize">
                 <button id="minimizeSidebar" class="btn btn-fill btn-icon"><i class="ti-menu-alt" ></i></button>
@@ -51,9 +51,9 @@
                             </p>
                         </a>
                         <ul class="dropdown-menu"> 
-                            <li>  <a href="{{url('/admin/profile')}}"><i class="fa fa-user-circle"></i> User Profile</a></li>
-                            <li> <a href="#changePassword"  data-toggle="modal"> <i class="ti-key"></i> Change Password</a><hr></li>
-                            <li> <a href="{{URL::to('/logout')}}"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            <li>  <a href="{{url('/admin/profile')}}">User Profile</a></li>
+                            <li> <a href="#changePassword"  data-toggle="modal"> Change Password</a><hr></li>
+                            <li> <a href="{{URL::to('/logout')}}"> Logout</a><hr></li>
                         </ul>
                     </li>
                 

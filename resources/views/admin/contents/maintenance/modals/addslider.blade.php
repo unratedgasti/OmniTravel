@@ -54,7 +54,7 @@
     
                 <!--Footer-->
                 <div class="modal-footer justify-content-center">
-                     <button class="btn btn-wd btn-info btn-fill btn-rotate">
+                     <button class="btn btn-wd btn-info btn-fill btn-rotate button">
                                                 <span class="btn-label">
                                                    <i class="ti-save"> </i>
                                                 </span>Save</button>

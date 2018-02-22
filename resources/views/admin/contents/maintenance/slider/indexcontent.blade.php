@@ -4,7 +4,7 @@
             <div class="row">
                     
                 <div class="col-md-12" align="right">
-                   <button  data-toggle="modal" data-target="#centralModalSuccess" class="btn btn-wd btn-success btn-fill btn-rotate">
+                   <button  data-toggle="modal" data-target="#centralModalSuccess" class="btn btn-wd btn-success btn-fill btn-rotate button">
                     <span class="btn-label">
                      <i class="ti-plus"></i>
                  </span>Add</button>
@@ -45,7 +45,7 @@
                                                     <p class="text-warning"> Inctive</p>
                                                     @endif
                                                 </td>
-                                                <td > <button  data-toggle="modal" data-target="#{{$value->id}}" class="btn btn-wd btn-primary btn-fill btn-rotate">
+                                                <td > <button  data-toggle="modal" data-target="#{{$value->id}}" class="btn btn-wd btn-primary btn-fill btn-rotate button">
                                                    
                                                 <span class="btn-label">
                                                    <i class="ti-pencil-alt"></i>

@@ -1,5 +1,5 @@
     
-    <div class="sidebar" data-background-color="brown" data-active-color="warning" style="background-color: green !important">
+    <div class="sidebar" data-background-color="orange" data-active-color="danger">
         <!--
             Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
             Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
@@ -56,12 +56,12 @@
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li class="@if($page_data['active'] == 'products') active @endif">
+                      <!--   <li class="@if($page_data['active'] == 'products') active @endif">
                             <a href="{{url('/admin/products')}}">
                                 <i class="ti-shopping-cart"></i>
                                 <p>Products</p>
                             </a>
-                        </li>
+                        </li> -->
                           <li class="@if($page_data['active'] == 'package') active @endif">
                             <a href="{{url('/admin/package')}}">
                                 <i class="ti-package"></i>

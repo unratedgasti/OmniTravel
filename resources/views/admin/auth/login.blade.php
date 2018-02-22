@@ -25,7 +25,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
 
                      {!! Form::open(['url' => '/admin/login','id'=>'validatelogin','novalidate'=>"novalidate"]) !!}
-                     <div class="card" data-background="color" data-color="blue">
+                     <div class="card">
 
                     <div class="card-header">
                         <h3 class="card-title">Login</h3>
@@ -50,7 +50,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
                         </div>
                     </div>
                     <div class="card-footer text-center">
-                        <button type="submit" class="btn btn-fill btn-wd ">Let's go</button>
+                        <button type="submit" class="btn btn-fill btn-wd btn-success">Let's go</button>
 
                     </div>
                 </div>

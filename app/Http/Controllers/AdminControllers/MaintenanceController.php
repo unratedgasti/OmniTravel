@@ -22,7 +22,8 @@ class MaintenanceController extends Controller
     {
         //
         $data = MaintenanceModel::where('content_name', '=' ,'contactus')->firstOrFail();
-        $page_data = array('page_name'=> "Contact Us",'active'=>'contact','data'=>$data);
+        $address = MaintenanceModel::where('content_name', '=' ,'address')->firstOrFail();
+        $page_data = array('page_name'=> "Contact Us",'active'=>'contact','data'=>$data,'address'=>$address);
         return view('admin/contents/maintenance/contactus/indexcontent',array('page_data'=>$page_data));
     }
 
@@ -46,9 +47,11 @@ class MaintenanceController extends Controller
     {
         //
 
-        if($request->content_name == "contactus"){           
+        if($request->content_name == "contactus"){
             MaintenanceModel::where('content_name', $request->content_name)
-            ->update($request->except('_token','content_name'));
+            ->update($request->except('_token','content_name','comp_add'));
+            MaintenanceModel::where('content_name', 'address')
+            ->update(['content_desc'=>$request->comp_add]);
             $msg = 'Contact successfully updated.';
         }else if ($request->content_name == "aboutus"){
             MaintenanceModel::where('content_name', $request->content_name)

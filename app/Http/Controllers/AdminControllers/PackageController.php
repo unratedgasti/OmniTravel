@@ -45,7 +45,28 @@ class PackageController extends Controller
     {
         //
         $package = new PackageModel;
-        $package->pack_test = $request->package_test;          
+         if($request->pack_status == 'on'){
+            $status = 1;
+        }else{
+            $status = 0;
+        }
+           if($request->pack_img){
+            $file = $request->file('pack_img');    
+            $destinationPath = 'includes/admin/packages';
+            $file->move($destinationPath,$file->getClientOriginalName());
+            $img = $file->getClientOriginalName();;
+        }else{
+            $img = 'noimg.jpg';
+        }
+        $package->pack_name = $request->pack_name;  
+        $package->pack_desc = $request->pack_desc;
+        $package->pack_price = $request->pack_price;  
+        $package->start_date =  date('Y-m-d',strtotime($request->start_date)); 
+        $package->end_date = date('Y-m-d',strtotime($request->end_date)); 
+        $package->pack_status = $status;          
+        $package->pack_inclusion = $request->pack_inclusion;
+        $package->pack_test = $request->pack_test;
+        $package->pack_img = $img;            
         $package->save();
 
     return \Redirect::to('admin/package')->with('sesmsg', ['msg' => 'Package successfully added.']);
@@ -86,12 +107,29 @@ class PackageController extends Controller
     public function update(Request $request, $id)
     {
         //
-         PackageModel::where('id', $id)
-          ->update($request->except('_token'));
+        $data =   PackageModel::find($id);
+        if($request->pack_status == 'on'){
+            $request->merge(['pack_status' =>1]);
+        }else{
+            $request->merge(['pack_status' =>0]);
+        }
+        $request->merge(['start_date' =>date('Y-m-d',strtotime($request->start_date)),'end_date' =>date('Y-m-d',strtotime($request->end_date))]);
+        if($request->pack_images){
+            $file = $request->file('pack_images');
+            $imgname = $file->getClientOriginalName();       
+            
+            $request->merge(['pack_img' => $imgname]);    
+            $destinationPath = 'includes/admin/packages';
+            $file->move($destinationPath, $file->getClientOriginalName());
+        }else{
+            $request->merge(['pack_img' =>$data->pack_img]);
+        }
+        PackageModel::where('id', $id)
+        ->update($request->except('_token','pack_images'));
 
 
 
-           return \Redirect::Back()->with('sesmsg', ['msg' => 'Product successfully updated.']);
+        return \Redirect::Back()->with('sesmsg', ['msg' => 'Product successfully updated.']);
     }
 
     /**

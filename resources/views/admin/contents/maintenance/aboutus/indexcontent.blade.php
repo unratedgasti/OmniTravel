@@ -2,16 +2,7 @@
 @section('indexcontent')   
         
            <div class="row">       
-                   <div class="col-md-12" align="left">
-                       
-                        <a href="{{url('/admin/dashboard')}}"  class="btn btn-wd btn-default btn-fill btn-move-left">
-                                                <span class="btn-label">
-                                                    <i class="ti-angle-left"></i>
-                                                </span>
-                                                Back To List
-                                            </a>
-                         <div class="clearfix"><br></div>
-                   </div>
+                
                    <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
@@ -37,7 +28,7 @@
                             </div>
                         </fieldset>
                         <fieldset align="center">
-                            <button class="btn btn-wd btn-info btn-fill btn-rotate">
+                            <button class="btn btn-wd btn-info btn-fill btn-rotate button">
                                 <span class="btn-label">
                                  <i class="ti-save"> </i>
                              </span>Save</button>
